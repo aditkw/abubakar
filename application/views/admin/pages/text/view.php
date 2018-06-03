@@ -83,7 +83,7 @@
 							<div class="tab-pane" id="tab_3">
 								<div class="form-group">
 									<label for="title">Our Services Text</label>
-									<textarea name="homepage" class="form-control" placeholder="Text on the our services page" rows="5"><?php echo $text->text_service;?></textarea>
+									<textarea name="service" class="form-control" placeholder="Text on the our services page" rows="5"><?php echo $text->text_service;?></textarea>
 								</div>
 							</div><!-- /.tab-pane -->
 

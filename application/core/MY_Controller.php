@@ -162,6 +162,7 @@ class Frontend_Controller extends MY_Controller
 		$this->data['cat_head'] = $this->category_model->get_category(array('category_pub' => '99'));
 
 		$this->data['contact'] = $this->contact_model->get(1);
+		$this->data['text'] = $this->text_model->get(1);
 
 	}
 }

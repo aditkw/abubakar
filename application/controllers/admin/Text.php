@@ -27,9 +27,9 @@ class Text extends Backend_Controller
 			/* ----------- EDIT DATA ----------- */
 			case 'update':
 				$array_data = array(
-					'text_home' => $post['text_home'],
-					'text_footer' => $post['text_footer'],
-					'text_service' => $post['text_service'],
+					'text_home' => $post['homepage'],
+					'text_footer' => $post['footer'],
+					'text_service' => $post['service'],
 					);
 				$update = $this->text_model->update($array_data, $array_id);
 				$this->session->set_flashdata('success',$this->edit_text);
