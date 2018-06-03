@@ -46,8 +46,8 @@
     </div>
     <div class="home-service">
       <div class="container">
-        <div class="row">as
-          <p>Our Servicess</p>
+        <div class="row">
+          <p>Our Services</p>
           <p><em>We are able to provide solutions in all major trading centres in areas like:</em></p>
         </div>
         <div class="row">
