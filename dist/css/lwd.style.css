@@ -202,6 +202,8 @@ header {
     box-shadow: 1px 8px 20px #888888;
     padding-top: 10px;
     padding-bottom: 10px; }
+    .homepage .member-firm .container.partners .owl-carousel .owl-dots.disabled, .homepage .member-firm .container.partners .owl-carousel .owl-nav.disabled {
+      display: block; }
     .homepage .member-firm .container.partners .item img {
       max-width: 100%; }
     .homepage .member-firm .container.partners .am-next, .homepage .member-firm .container.partners .am-prev {

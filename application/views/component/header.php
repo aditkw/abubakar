@@ -12,22 +12,22 @@
       </div>
       <div class="menubar col-lg-5">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="<?=site_url()?>">Home</a></li>
           <li>
             <a href="#">About Us <i class="fa fa-angle-down"></i></a>
             <ul>
-              <li><a href="#">Our Firm</a></li>
-              <li><a href="#">Our Service</a></li>
-              <li><a href="#">Our Partners</a></li>
-              <li><a href="#">Our Clients</a></li>
-              <li><a href="#">Benefits For Our Client</a></li>
-              <li><a href="#">International Association</a></li>
+              <li><a href="<?=site_url('our-firm')?>">Our Firm</a></li>
+              <li><a href="<?=site_url('our-service')?>">Our Service</a></li>
+              <li><a href="<?=site_url('our-partners')?>">Our Partners</a></li>
+              <li><a href="<?=site_url('our-clients')?>">Our Clients</a></li>
+              <li><a href="<?=site_url('benefits-for-our-client')?>">Benefits For Our Client</a></li>
+              <li><a href="<?=site_url('international-association')?>">International Association</a></li>
             </ul>
           </li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Event</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="<?=site_url('news')?>">News</a></li>
+          <li><a href="<?=site_url('event')?>">Event</a></li>
+          <li><a href="<?=site_url('careers')?>">Careers</a></li>
+          <li><a href="<?=site_url('contact-us')?>">Contact Us</a></li>
         </ul>
         <form id="search" class="umpetin" action="index.html" method="post">
           <input placeholder="Search here" type="text" name="" value="">
