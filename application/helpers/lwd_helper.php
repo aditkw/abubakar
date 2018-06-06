@@ -222,7 +222,7 @@ function limitKalimat($kalimat, $limit=40){
 
 	}
 
-	function convertDate($source, $cond){
+	function convertDate($source, $cond = 'default'){
 		$date = new DateTime($source);
 		switch ($cond) {
 			case 'tgl':
@@ -238,7 +238,7 @@ function limitKalimat($kalimat, $limit=40){
 				break;
 
 			default:
-				$r = $date->format('d-m-Y');
+				$r = $date->format('d F Y');
 				break;
 		}
 

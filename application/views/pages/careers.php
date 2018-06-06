@@ -19,50 +19,33 @@
         <div class="row">
           <div class="col-lg-3">
             <ul class="nav nav-tabs">
-              <li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="false">Web Developer</a></li>
-              <li class=""><a href="#tab_2" data-toggle="tab" aria-expanded="false">App Developer</a></li>
-              <li class=""><a href="#tab_3" data-toggle="tab" aria-expanded="false">Front-end Developer</a></li>
+              <?php $i=0; foreach ($careers as $career):
+                ($i == 0) ? $aktip='active' : $aktip = '';
+              ?>
+                <li class="<?=$aktip?>"><a href="#<?=title_url($career->careers_name)?>" data-toggle="tab" aria-expanded="false"><?=$career->careers_name?></a></li>
+              <?php $i++; endforeach; ?>
             </ul>
           </div>
           <div class="col-lg-9">
             <div class="tab-content">
-              <div class="tab-pane active" id="tab_1">
-                <h3>Web Developer</h3>
-                <div class="calendar">
-                  <i class="fa fa-calendar"></i>
-                  <div class="date">
-                    <p>Posted date: <strong>25-10-2018</strong> </p>
-                    <p>Closed date: <strong>25-11-2018</strong> </p>
+              <?php $i=0; foreach ($careers as $career):
+                ($i == 0) ? $aktip='active' : $aktip = '';
+              ?>
+                <div class="tab-pane <?=$aktip?>" id="<?=title_url($career->careers_name)?>">
+                  <h3><?=$career->careers_name?></h3>
+                  <div class="calendar">
+                    <i class="fa fa-calendar"></i>
+                    <div class="date">
+                      <p>Posted date: <strong><?=convertDate($career->careers_post)?></strong> </p>
+                      <p>Closed date: <strong><?=convertDate($career->careers_close)?></strong> </p>
+                    </div>
+                    <!-- <div class="clear"></div> -->
                   </div>
-                  <!-- <div class="clear"></div> -->
+                  <div class="content">
+                    <?=$career->careers_desc?>
+                  </div>
                 </div>
-                <div class="content">
-                  <h4>Responsibilities: </h4>
-                  <ul>
-                    <li>Obtain a working knowledge of the clients business</li>
-                    <li>Lead client audit engagements, which include planning, executing, directing and completing financial audits</li>
-                    <li>Supervise, train, develop auditing staff to develop their knowledge by monitor and control auditing staff</li>
-                    <li>Handle more than 5 clients</li>
-                    <li>Handle more than 5 staffs</li>
-                    <li>Perform other job related duties as necessary</li>
-                  </ul>
-                  <h4>Requirements</h4>
-                  <ul>
-                    <li>Obtain a working knowledge of the clients business</li>
-                    <li>Lead client audit engagements, which include planning, executing, directing and completing financial audits</li>
-                    <li>Supervise, train, develop auditing staff to develop their knowledge by monitor and control auditing staff</li>
-                    <li>Handle more than 5 clients</li>
-                    <li>Handle more than 5 staffs</li>
-                    <li>Perform other job related duties as necessary</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab_2">
-                elsa
-              </div>
-              <div class="tab-pane" id="tab_3">
-                nauli
-              </div>
+              <?php $i++; endforeach; ?>
             </div>
           </div>
         </div>

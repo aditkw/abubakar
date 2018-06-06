@@ -4,7 +4,7 @@
       <img class="img-responsive" src="<?=site_url('dist/img/assets/banner1.jpg')?>" alt="">
       <div class="breadcumb">
         <ul class="breadcrumb container">
-          <li><a href="#">Home</a></li>
+          <li><a href="<?=site_url()?>">Home</a></li>
           <li><a href="#">About Us</a></li>
           <li class="aktip"><a href="#">Our Service</a></li>
         </ul>
@@ -30,7 +30,7 @@
                 <img src="<?=site_url("uploads/img/services/$service->service_image")?>" alt="">
                 <p><?=$service->service_name?></p>
                 <div class="icon"><img src="<?=site_url("uploads/img/services/$service->service_icon")?>" alt=""></div>
-                <a href="#">
+                <a href="<?=site_url('our-service/'.$service->service_link)?>">
                   <i class="fa fa-long-arrow-right"></i>
                 </a>
                 <div class="warna"></div>

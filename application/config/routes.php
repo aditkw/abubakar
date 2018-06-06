@@ -20,4 +20,6 @@ $route['benefits-for-our-client'] 			    = 'benefits';
 $route['international-association'] 			  = 'international';
 $route['our-service'] 										  = 'service';
 $route['our-service/(:any)'] 							  = 'service/detail/$1';
+$route['news/(:any)'] 							        = 'news/detail/$1';
+$route['event/(:any)'] 							        = 'event/detail/$1';
 $route['sitemap\.xml'] 					            = 'seo/sitemap';
