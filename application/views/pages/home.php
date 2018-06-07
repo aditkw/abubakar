@@ -46,7 +46,7 @@
               <div class="box-service-home">
                 <img src="<?=site_url("uploads/img/services/$service->image_name")?>" alt="">
                 <p><?=$service->services_name?></p>
-                <p><?=$service->services_desc?></p>
+                <p><?=limitKalimat($service->services_desc, 151)?></p>
                 <a href="<?=site_url("our-service/$service->services_link")?>"><span><i class="fa fa-plus"></i></span></a>
               </div>
             </div>
@@ -80,22 +80,26 @@
         </div>
         <div class="row">
           <div id="article-slide" class="owl-carousel">
-            <?php foreach($news as $news): ?>
-            <div class="item box">
-              <div class="date">
-                <div class="tgl">
-                  <p><?=convertDate($news->news_date, 'tgl')?></p>
-                  <p><?=convertDate($news->news_date, 'bln')?></p>
+            <?php foreach($news as $news):
+            ($news->catnews_id == 1) ? $apa='news' : $apa='event';
+            ?>
+            <a style="text-decoration:none;color:inherit" href="<?=site_url("$apa/$news->news_link")?>">
+              <div class="item box">
+                <div class="date">
+                  <div class="tgl">
+                    <p><?=convertDate($news->news_date, 'tgl')?></p>
+                    <p><?=convertDate($news->news_date, 'bln')?></p>
+                  </div>
+                  <div class="thn">
+                    <p><?=convertDate($news->news_date, 'thn')?></p>
+                  </div>
                 </div>
-                <div class="thn">
-                  <p><?=convertDate($news->news_date, 'thn')?></p>
+                <div class="title-desc">
+                  <p><?=$news->news_title?></p>
+                  <?=limitKalimat($news->news_desc, 110)?>
                 </div>
               </div>
-              <div class="title-desc">
-                <p><?=$news->news_title?></p>
-                <?=limitKalimat($news->news_desc, 110)?>
-              </div>
-            </div>
+            </a>
           <?php endforeach; ?>
           </div>
         </div>

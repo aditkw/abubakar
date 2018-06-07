@@ -20,7 +20,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="user">
-              <i class="fa fa-user"></i> Administrator
+              <i class="fa fa-user"></i> <?=$news->user_name?>
             </div>
             <div class="tanggal">
               <i class="fa fa-calendar"></i> <?=convertDate($news->news_date)?>
@@ -42,15 +42,17 @@
             <?=$news->news_desc?>
           </div>
         </div>
-        <div class="row video">
-          <div class="col-lg-12">
-            <div class="box-video">
-              <p>Watch the video</p>
-              <span class="garis"></span>
-              <iframe src="<?=$news->news_video?>" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe>
+        <?php if (!empty($news->news_video)): ?>
+          <div class="row video">
+            <div class="col-lg-12">
+              <div class="box-video">
+                <p>Watch the video</p>
+                <span class="garis"></span>
+                <iframe src="<?=$news->news_video?>" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe>
+              </div>
             </div>
           </div>
-        </div>
+        <?php endif; ?>
         <div class="row">
           <div class="col-lg-12">
             <p>Our Other News</p>

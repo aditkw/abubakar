@@ -96,17 +96,22 @@ class News extends Backend_Controller
 			$array_data['catnews_id'] 				= $this->catnews_id;
 			$array_data['news_title'] 				= $post['title'];
 			$array_data['news_video'] 				= $video;
+			$array_data['news_desc'] 					= $post['desc'];
+			$array_data['news_link']					= $link;
 			// $array_data['news_cat_id'] 			= $post['category'];
 			// $array_data['news_tag'] 					=	$tag;
-			$array_data['news_desc'] 					= $post['desc'];
 			// $array_data['news_alt'] 					= $post['title'];
-			$array_data['news_link']					= $link;
 		}
 
 		switch ($param) {
 
 			/* ----------- TAMBAH DATA ----------- */
 			case 'insert':
+				//id user dari session
+				$userdata = $this->session->userdata;
+				$user_id = hash_link_decode($userdata['user_session']);
+				$array_data['user_id']		 				= $user_id;
+
 				$this->form_validation->set_rules('title','News Title','trim|required|is_unique[{PRE}news.news_title]');
 
 				if ($this->form_validation->run() == FALSE) {

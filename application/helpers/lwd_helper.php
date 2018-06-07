@@ -60,7 +60,7 @@ function active_menu($uri, $link)
 function active_menu_front($uri, $link)
 {
 	if ($uri == $link) {
-		return 'menu-toc-current';
+		return 'active';
 	}
 }
 

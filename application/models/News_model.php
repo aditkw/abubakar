@@ -23,10 +23,18 @@ class News_model extends MY_Model
 		parent::__construct();
 	}
 
-	public function get_news($where = NULL, $limit = NULL, $offset = NULL, $single = FALSE, $select = NULL)
+	public function get_news($where = NULL, $limit = NULL, $offset = NULL, $single = FALSE, $select = NULL, $like = NULL, $order = NULL)
 	{
-		// $this->db->join('{PRE}'.'news_cat', '{PRE}'.'news_cat.news_cat_id = {PRE}'.$this->_table_name.'.news_cat_id');
+		if ($like) {
+			$this->db->like($like);
+		}
+		if ($order) {
+			foreach ($order as $key => $value) {
+				$this->db->order_by($key, $value);
+			}
+		}
 		$this->db->join('{PRE}'.'image', '{PRE}'.'image.parent_id = {PRE}'.$this->_table_name.'.news_id');
+		$this->db->join('{PRE}'.'user', '{PRE}'.'user.user_id = {PRE}'.$this->_table_name.'.user_id');
 		return parent::get_by($where, $limit, $offset, $single, $select);
 	}
 }

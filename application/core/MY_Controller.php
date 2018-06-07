@@ -66,12 +66,10 @@ class MY_Controller extends CI_Controller
 		/*kirim base-url*/
 		$this->data['base_url'] = base_url();
 		$this->data['site_url'] = site_url();
-		/*contact*/
-		$this->data['contact'] = $this->contact_model->get(1);
 		/*general_site*/
 		$this->data['site'] = $this->site_model->get(1);
 		// logo dan favicon
-		$this->data['site_image'] = $this->site_model->get_site(array('site_id' => '1'), NULL, NULL, FALSE, 'image_name');
+
 		// echo "<pre>";
 		// print_r($this->data['site_image']);
 		// echo "</pre>";
@@ -162,7 +160,13 @@ class Frontend_Controller extends MY_Controller
 		$this->data['cat_head'] = $this->category_model->get_category(array('category_pub' => '99'));
 
 		$this->data['contact'] = $this->contact_model->get(1);
+		$this->data['foot_services'] = $this->services_model->get_by(array('services_pub' => '99'), 7);
 		$this->data['text'] = $this->text_model->get(1);
+
+		$this->data['about_list'] = array(
+			'our-firm', 'our-service', 'our-partners', 'our-clients',
+			'benefits-for-our-client', 'international-association'
+		);
 
 	}
 }

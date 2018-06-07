@@ -12,9 +12,9 @@
       </div>
       <div class="menubar col-lg-5">
         <ul>
-          <li><a href="<?=site_url()?>">Home</a></li>
+          <li><a class="<?php echo (empty($uri_1)) ? "active" : ""; ?>" href="<?=site_url()?>">Home</a></li>
           <li>
-            <a href="#">About Us <i class="fa fa-angle-down"></i></a>
+            <a class="<?=active_perent($uri_1, $about_list)?>" href="#">About Us <i class="fa fa-angle-down"></i></a>
             <ul>
               <li><a href="<?=site_url('our-firm')?>">Our Firm</a></li>
               <li><a href="<?=site_url('our-service')?>">Our Service</a></li>
@@ -24,13 +24,13 @@
               <li><a href="<?=site_url('international-association')?>">International Association</a></li>
             </ul>
           </li>
-          <li><a href="<?=site_url('news')?>">News</a></li>
-          <li><a href="<?=site_url('event')?>">Event</a></li>
-          <li><a href="<?=site_url('careers')?>">Careers</a></li>
-          <li><a href="<?=site_url('contact-us')?>">Contact Us</a></li>
+          <li><a class="<?=active_menu($uri_1, 'news')?>" href="<?=site_url('news')?>">News</a></li>
+          <li><a class="<?=active_menu($uri_1, 'event')?>" href="<?=site_url('event')?>">Event</a></li>
+          <li><a class="<?=active_menu($uri_1, 'careers')?>" href="<?=site_url('careers')?>">Careers</a></li>
+          <li><a class="<?=active_menu($uri_1, 'contact-us')?>" href="<?=site_url('contact-us')?>">Contact Us</a></li>
         </ul>
-        <form id="search" class="umpetin" action="index.html" method="post">
-          <input placeholder="Search here" type="text" name="" value="">
+        <form id="search" class="umpetin" action="<?=site_url('search')?>" method="get">
+          <input placeholder="Search here" type="text" name="s">
           <button type="submit"><i class="fa fa-search"></i></button>
         </form>
       </div>

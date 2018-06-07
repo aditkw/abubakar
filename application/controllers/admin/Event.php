@@ -107,6 +107,10 @@ class event extends Backend_Controller
 
 			/* ----------- TAMBAH DATA ----------- */
 			case 'insert':
+				//id user dari session
+				$userdata = $this->session->userdata;
+				$user_id = hash_link_decode($userdata['user_session']);
+				$array_data['user_id']		 				= $user_id;
 				$this->form_validation->set_rules('title','event Title','trim|required|is_unique[{PRE}news.news_title]');
 
 				if ($this->form_validation->run() == FALSE) {

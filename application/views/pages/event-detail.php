@@ -20,7 +20,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="user">
-              <i class="fa fa-user"></i> Administrator
+              <i class="fa fa-user"></i> <?=$event->user_name?>
             </div>
             <div class="tanggal">
               <i class="fa fa-calendar"></i> <?=convertDate($event->news_date)?>
@@ -34,7 +34,7 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <img class="img-responsive" src="<?=site_url('dist/img/assets/contoh-news.jpg')?>" alt="">
+            <img class="img-responsive" src="<?=site_url("uploads/img/event/$event->image_name")?>" alt="">
           </div>
         </div>
         <div class="row">
@@ -42,15 +42,17 @@
             <?=$event->news_desc?>
           </div>
         </div>
-        <div class="row video">
-          <div class="col-lg-12">
-            <div class="box-video">
-              <p>Watch the video</p>
-              <span class="garis"></span>
-              <iframe src="<?=$event->news_link?>" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe>
+        <?php if (!empty($event->news_video)): ?>
+          <div class="row video">
+            <div class="col-lg-12">
+              <div class="box-video">
+                <p>Watch the video</p>
+                <span class="garis"></span>
+                <iframe src="<?=$event->news_link?>" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe>
+              </div>
             </div>
           </div>
-        </div>
+        <?php endif; ?>
         <div class="row">
           <div class="col-lg-12">
             <p>Our Other Event</p>

@@ -62,6 +62,7 @@
 						<tr>
 							<th width="5%">#</th>
 							<th>Image</th>
+							<th>Author</th>
 							<th>Title</th>
 							<th>Posting Date</th>
 							<!-- <th width="15%">Category</th> -->
@@ -76,6 +77,7 @@
 								<td>
 									<img src="<?php echo base_url('uploads/img/news/'.$thumb_pre.$news->image_name);?>" class="img img-responsive" alt="<?php echo $news->news_title;?>">
 								</td>
+								<td><?php echo ucwords($news->user_name);?></td>
 								<td><?php echo ucwords($news->news_title);?></td>
 								<?php $date = date_create($news->news_date); ?>
 								<td><?=date_format($date, "d/m/Y");?></td>
@@ -106,6 +108,7 @@
 						<tr>
 							<th>#</th>
 							<th>Image</th>
+							<th>Author</th>
 							<th>Title</th>
 							<th>Posting Date</th>
 							<!-- <th>Category</th>
