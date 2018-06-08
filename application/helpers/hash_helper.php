@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /*hash string*/
 function hash_string($string = '')
@@ -12,16 +12,16 @@ function hash_string($string = '')
 **/
 function hash_link_encode($value){
 	$_this =& get_instance();
-	$encode = $_this->encrypt->encode($value);
+	$encode = $_this->encryption->encrypt($value);
 	$result = str_replace(array('+','/','='), array('-','_','~'), $encode);
-	
+
 	return $result;
 }
 
 function hash_link_decode($value){
 	$_this =& get_instance();
 	$decode = str_replace(array('-','_','~'), array('+','/','='), $value);
-	$result =  $_this->encrypt->decode($decode);
-	
+	$result =  $_this->encryption->decrypt($decode);
+
 	return $result;
 }
