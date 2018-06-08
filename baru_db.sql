@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 07, 2018 at 12:15 PM
+-- Generation Time: Jun 08, 2018 at 05:21 AM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 5.6.32
 
@@ -54,7 +54,7 @@ INSERT INTO `lwd_banner` (`banner_id`, `banner_type`, `banner_link`, `banner_alt
 CREATE TABLE `lwd_careers` (
   `careers_id` int(8) NOT NULL,
   `careers_name` varchar(255) NOT NULL,
-  `careers_desc` varchar(255) NOT NULL,
+  `careers_desc` text NOT NULL,
   `careers_post` date NOT NULL,
   `careers_close` date NOT NULL,
   `careers_pub` enum('88','99') NOT NULL
@@ -65,7 +65,12 @@ CREATE TABLE `lwd_careers` (
 --
 
 INSERT INTO `lwd_careers` (`careers_id`, `careers_name`, `careers_desc`, `careers_post`, `careers_close`, `careers_pub`) VALUES
-(2, 'Web Developer', '<h3>Responsibilities:</h3>\r\n\r\n<ul>\r\n <li>Obtain a working knowledge of the clients business</li>\r\n <li>Lead client audit engagements, which include planning, executing, directing and completing financial audits</li>\r\n <li>Supervise train develop auditinss', '2018-06-07', '2018-06-22', '99');
+(2, 'Web Developer', '<h3>Responsibilities</h3>\r\n\r\n<ul>\r\n <li>Obtain a working knowledge of the clients business.</li>\r\n <li>Lead client audit engagements, which include planning, executing, directing and completing financial audits</li>\r\n <li>Supervise, train, develop auditing staff to develop their knowledge by monitor and control auditing staff</li>\r\n <li>Handle more than 5 clients</li>\r\n <li>Handle more than 5 staffs</li>\r\n <li>Perform other job related duties as necessary</li>\r\n</ul>\r\n\r\n<p> </p>\r\n\r\n<h3>Requirements:</h3>\r\n\r\n<ul>\r\n <li>Minimum of Age 23 to 28 years old.</li>\r\n <li>Bachelor degree in Accounting with minimum GPA 3.00 or better.</li>\r\n <li>Minimum 2 years at Senior level from Registered Public Accountant only.</li>\r\n <li>Strong accounting knowledges and jouals.</li>\r\n <li>Fully understand cash flow and consolidation.</li>\r\n <li>Fluent in English (Both oral and writing).</li>\r\n <li>Able to work as a team as well as independently.</li>\r\n <li>Able to work under pressure, fast and quick response.</li>\r\n <li>Good personality, self-motivation, loyal, honest and easy going.</li>\r\n</ul>\r\n', '2018-06-08', '2018-06-22', '99'),
+(3, 'Front-end Developer', '<h3>Responsibilities</h3>\r\n\r\n<ul>\r\n <li>Obtain a working knowledge of the clients business.</li>\r\n <li>Lead client audit engagements, which include planning, executing, directing and completing financial audits</li>\r\n <li>Supervise, train, develop auditing staff to develop their knowledge by monitor and control auditing staff</li>\r\n <li>Handle more than 5 clients</li>\r\n <li>Handle more than 5 staffs</li>\r\n <li>Perform other job related duties as necessary</li>\r\n</ul>\r\n\r\n<p> </p>\r\n\r\n<h3>Requirements:</h3>\r\n\r\n<ul>\r\n <li>Minimum of Age 23 to 28 years old.</li>\r\n <li>Bachelor degree in Accounting with minimum GPA 3.00 or better.</li>\r\n <li>Minimum 2 years at Senior level from Registered Public Accountant only.</li>\r\n <li>Strong accounting knowledges and jouals.</li>\r\n <li>Fully understand cash flow and consolidation.</li>\r\n <li>Fluent in English (Both oral and writing).</li>\r\n <li>Able to work as a team as well as independently.</li>\r\n <li>Able to work under pressure, fast and quick response.</li>\r\n <li>Good personality, self-motivation, loyal, honest and easy going.</li>\r\n</ul>\r\n', '2018-06-08', '2018-06-22', '99'),
+(4, 'Backend Developer', '<h3>Responsibilities</h3>\r\n\r\n<ul>\r\n <li>Obtain a working knowledge of the clients business.</li>\r\n <li>Lead client audit engagements, which include planning, executing, directing and completing financial audits</li>\r\n <li>Supervise, train, develop auditing staff to develop their knowledge by monitor and control auditing staff</li>\r\n <li>Handle more than 5 clients</li>\r\n <li>Handle more than 5 staffs</li>\r\n <li>Perform other job related duties as necessary</li>\r\n</ul>\r\n\r\n<p> </p>\r\n\r\n<h3>Requirements:</h3>\r\n\r\n<ul>\r\n <li>Minimum of Age 23 to 28 years old.</li>\r\n <li>Bachelor degree in Accounting with minimum GPA 3.00 or better.</li>\r\n <li>Minimum 2 years at Senior level from Registered Public Accountant only.</li>\r\n <li>Strong accounting knowledges and jouals.</li>\r\n <li>Fully understand cash flow and consolidation.</li>\r\n <li>Fluent in English (Both oral and writing).</li>\r\n <li>Able to work as a team as well as independently.</li>\r\n <li>Able to work under pressure, fast and quick response.</li>\r\n <li>Good personality, self-motivation, loyal, honest and easy going.</li>\r\n</ul>\r\n', '2018-06-08', '2018-06-28', '99'),
+(5, 'Senior Auditor', '<h3>Responsibilities</h3>\r\n\r\n<ul>\r\n <li>Obtain a working knowledge of the clients business.</li>\r\n <li>Lead client audit engagements, which include planning, executing, directing and completing financial audits</li>\r\n <li>Supervise, train, develop auditing staff to develop their knowledge by monitor and control auditing staff</li>\r\n <li>Handle more than 5 clients</li>\r\n <li>Handle more than 5 staffs</li>\r\n <li>Perform other job related duties as necessary</li>\r\n</ul>\r\n\r\n<p> </p>\r\n\r\n<h3>Requirements:</h3>\r\n\r\n<ul>\r\n <li>Minimum of Age 23 to 28 years old.</li>\r\n <li>Bachelor degree in Accounting with minimum GPA 3.00 or better.</li>\r\n <li>Minimum 2 years at Senior level from Registered Public Accountant only.</li>\r\n <li>Strong accounting knowledges and jouals.</li>\r\n <li>Fully understand cash flow and consolidation.</li>\r\n <li>Fluent in English (Both oral and writing).</li>\r\n <li>Able to work as a team as well as independently.</li>\r\n <li>Able to work under pressure, fast and quick response.</li>\r\n <li>Good personality, self-motivation, loyal, honest and easy going.</li>\r\n</ul>\r\n', '2018-06-08', '2018-06-30', '99'),
+(6, 'Junior Auditor', '<h3>Responsibilities</h3>\r\n\r\n<ul>\r\n <li>Obtain a working knowledge of the clients business.</li>\r\n <li>Lead client audit engagements, which include planning, executing, directing and completing financial audits</li>\r\n <li>Supervise, train, develop auditing staff to develop their knowledge by monitor and control auditing staff</li>\r\n <li>Handle more than 5 clients</li>\r\n <li>Handle more than 5 staffs</li>\r\n <li>Perform other job related duties as necessary</li>\r\n</ul>\r\n\r\n<p> </p>\r\n\r\n<h3>Requirements:</h3>\r\n\r\n<ul>\r\n <li>Minimum of Age 23 to 28 years old.</li>\r\n <li>Bachelor degree in Accounting with minimum GPA 3.00 or better.</li>\r\n <li>Minimum 2 years at Senior level from Registered Public Accountant only.</li>\r\n <li>Strong accounting knowledges and jouals.</li>\r\n <li>Fully understand cash flow and consolidation.</li>\r\n <li>Fluent in English (Both oral and writing).</li>\r\n <li>Able to work as a team as well as independently.</li>\r\n <li>Able to work under pressure, fast and quick response.</li>\r\n <li>Good personality, self-motivation, loyal, honest and easy going.</li>\r\n</ul>\r\n', '2018-06-08', '2018-06-22', '99'),
+(7, 'Administrator Website', '<h3>Responsibilities</h3>\r\n\r\n<ul>\r\n <li>Obtain a working knowledge of the clients business.</li>\r\n <li>Lead client audit engagements, which include planning, executing, directing and completing financial audits</li>\r\n <li>Supervise, train, develop auditing staff to develop their knowledge by monitor and control auditing staff</li>\r\n <li>Handle more than 5 clients</li>\r\n <li>Handle more than 5 staffs</li>\r\n <li>Perform other job related duties as necessary</li>\r\n</ul>\r\n\r\n<p> </p>\r\n\r\n<h3>Requirements:</h3>\r\n\r\n<ul>\r\n <li>Minimum of Age 23 to 28 years old.</li>\r\n <li>Bachelor degree in Accounting with minimum GPA 3.00 or better.</li>\r\n <li>Minimum 2 years at Senior level from Registered Public Accountant only.</li>\r\n <li>Strong accounting knowledges and jouals.</li>\r\n <li>Fully understand cash flow and consolidation.</li>\r\n <li>Fluent in English (Both oral and writing).</li>\r\n <li>Able to work as a team as well as independently.</li>\r\n <li>Able to work under pressure, fast and quick response.</li>\r\n <li>Good personality, self-motivation, loyal, honest and easy going.</li>\r\n</ul>\r\n', '2018-06-08', '2018-06-21', '99');
 
 -- --------------------------------------------------------
 
@@ -387,7 +392,7 @@ CREATE TABLE `lwd_user` (
 --
 
 INSERT INTO `lwd_user` (`user_id`, `user_username`, `user_password`, `user_name`, `user_email`, `user_level`, `user_status`, `user_image`, `user_session`) VALUES
-(1, 'admin', '074c0845506eb57dfbc3ef6dfdf3a3d48251871c', 'admin', 'admin@email.com', 'admin', 'active', '', 'd05876b9d8ed45acc66062a721587e2cb9db4114'),
+(1, 'admin', '074c0845506eb57dfbc3ef6dfdf3a3d48251871c', 'admin', 'admin@email.com', 'admin', 'active', '', 'bdc5de51169b3ef68f3d0dce102ca2eca2864bc1'),
 (2, 'mainlwd', 'a82d82f5133af2c987010c8e446c35230164a0fe', 'Maintenance LWD', 'lwd@lawavedesign.com', 'admin', 'active', '', 'b6bc5de8c9694006f7c96f34e37c0551c8b13525');
 
 --
@@ -494,7 +499,7 @@ ALTER TABLE `lwd_banner`
 -- AUTO_INCREMENT for table `lwd_careers`
 --
 ALTER TABLE `lwd_careers`
-  MODIFY `careers_id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `careers_id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `lwd_category`
@@ -524,7 +529,7 @@ ALTER TABLE `lwd_contact`
 -- AUTO_INCREMENT for table `lwd_image`
 --
 ALTER TABLE `lwd_image`
-  MODIFY `image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
+  MODIFY `image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
 
 --
 -- AUTO_INCREMENT for table `lwd_info`
@@ -536,7 +541,7 @@ ALTER TABLE `lwd_info`
 -- AUTO_INCREMENT for table `lwd_news`
 --
 ALTER TABLE `lwd_news`
-  MODIFY `news_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `news_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `lwd_seo`
