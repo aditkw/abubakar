@@ -22,7 +22,7 @@
           </div>
           <div class="col-lg-11">
             <div class="col-lg-8">
-              <form class="form-horizontal form-contact" action="contact-us.html" method="post">
+              <form class="form-horizontal form-contact" action="<?=site_url('contact')?>" method="post">
                 <?php if (!empty($error)) {?>
       								<div class="alert alert-danger">
       									<p style="text-align:center;"><?=$error?></p>
@@ -38,7 +38,7 @@
                 <div class="form-group">
                   <label class="control-label col-lg-2" for="name">Name</label>
                   <div class="col-lg-10">
-                    <input placeholder="Input your name" class="form-control" type="text" name="name" value="">
+                    <input placeholder="Input your name" class="form-control" type="text" name="nama" value="">
                   </div>
                 </div>
 
@@ -52,7 +52,7 @@
                 <div class="form-group">
                   <label class="control-label col-lg-2" for="subject">Telephone</label>
                   <div class="col-lg-10">
-                    <input placeholder="Input your phone number" class="form-control" type="text" name="telephone" value="">
+                    <input placeholder="Input your phone number" class="form-control" type="text" name="contact_no" value="">
                   </div>
                 </div>
 
@@ -64,7 +64,7 @@
                 </div>
 
                 <div class="col-lg-2 col-lg-offset-2">
-                  <input class="btn btn-info" type="submit" name="contact" value="Submit">
+                  <input class="btn btn-info" type="submit" name="send" value="Submit">
                 </div>
               </form>
             </div>

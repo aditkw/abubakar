@@ -21,7 +21,7 @@
 				<tr style="width: 100%;">
 				<!-- LOGO -->
 					<th style="width: 100%;border-top: 3px solid #5d9ec3;padding: 15px 0; background-color: #ffffff">
-						<img src="<?php echo $base_url."uploads/img/site/".$site_image[0]->image_name ?>" alt="<?php echo $site->site_name ?> | Logo">
+						<img src="" alt="<?php echo $site->site_name ?> | Logo">
 					</th>
 				</tr>
 			</thead>
