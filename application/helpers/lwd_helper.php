@@ -82,7 +82,7 @@ function lwd_send_email($to, $subject, $email)
 
 	$_this->email->initialize($config);
 
-	$_this->email->from('aditlawave@gmail.com');
+	$_this->email->from('');
 	$_this->email->to($to);
 	$_this->email->subject($subject);
 	$_this->email->message($email);
