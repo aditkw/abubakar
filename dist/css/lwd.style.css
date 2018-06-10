@@ -1,22 +1,22 @@
 @font-face {
-  font-family: "Teko Reguler";
-  src: url(../fonts/teko/Teko-Regular.ttf);
-  format: "ttf"; }
-@font-face {
   font-family: "Opensans";
   src: url(../fonts/opensan/OpenSans-Regular.ttf);
   format: "ttf"; }
 @font-face {
-  font-family: "Raleway Thin";
-  src: url(../fonts/raleway/Raleway-Thin.ttf);
-  format: "ttf"; }
-@font-face {
-  font-family: "Raleway Bold";
-  src: url(../fonts/raleway/Raleway-Bold.ttf);
-  format: "ttf"; }
-@font-face {
   font-family: "Opensans Light";
   src: url(../fonts/opensan/OpenSans-Light.ttf);
+  format: "ttf"; }
+@font-face {
+  font-family: "Segoe Ui";
+  src: url(../fonts/segoe/segoeui.ttf);
+  format: "ttf"; }
+@font-face {
+  font-family: "Raleway Extrabold";
+  src: url(../fonts/raleway/Raleway-ExtraBold.ttf);
+  format: "ttf"; }
+@font-face {
+  font-family: "Raleway Heavy";
+  src: url(../fonts/raleway/Raleway-Heavy.ttf);
   format: "ttf"; }
 @font-face {
   font-family: "Opensans Semibold";
