@@ -135,12 +135,18 @@
 						<div class="form-group">
 							<label for="product">Image Thumbnail</label>
 							<input type="file" name="image[]" class="form-control" required>
+							<div class="alert alert-warning">
+								Ukuran image: <strong>350 x 240</strong>
+							</div>
 						</div>
 					</div>
 					<div class="col-lg-6">
 						<div class="form-group">
 							<label for="product">Image Icon</label>
 							<input type="file" name="image[]" class="form-control" required>
+							<div class="alert alert-warning">
+								Ukuran icon: <strong>30 x 30</strong>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -181,6 +187,9 @@
 							<label for="product">Image Thumbnail</label>
 							<input id="image" type="hidden" name="id_image_0">
 							<input type="file" name="image[]" class="form-control">
+							<div class="alert alert-warning">
+								Ukuran image: <strong>350 x 240</strong>
+							</div>
 						</div>
 					</div>
 					<div class="col-lg-6">
@@ -188,6 +197,9 @@
 							<label for="product">Image Icon</label>
 							<input id="icon" type="hidden" name="id_image_1">
 							<input type="file" name="image[]" class="form-control">
+							<div class="alert alert-warning">
+								Ukuran image: <strong>30 x 30</strong>
+							</div>
 						</div>
 					</div>
 				</div>

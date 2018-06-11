@@ -26,15 +26,18 @@
               <i class="fa fa-calendar"></i> <?=convertDate($event->news_date)?>
             </div>
             <div class="share">
-              <a class="fa fa-facebook facebook-icon social-icon-x2 rounded" href="#"></a>
-              <a class="fa fa-twitter twitter-icon social-icon-x2 rounded" href="#"></a>
-              <a class="fa fa-linkedin linkedin-icon social-icon-x2 rounded" href="#"></a>
+              <?php $link = base_url(uri_string()); ?>
+              <a class="fa fa-facebook facebook-icon social-icon-x2 rounded" href="https://www.facebook.com/sharer/sharer.php?u=<?=$link?>"></a>
+              <a class="fa fa-twitter twitter-icon social-icon-x2 rounded" href="https://twitter.com/intent/tweet?url=<?=$link?>"></a>
+              <a class="fa fa-linkedin linkedin-icon social-icon-x2 rounded" href="http://www.linkedin.com/shareArticle?mini=true&url=<?=$link?>"></a>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <img class="img-responsive" src="<?=site_url("uploads/img/event/$event->image_name")?>" alt="">
+            <a data-fancybox="event" data-caption="<?=$event->news_title?>" href="<?=site_url("uploads/img/event/$event->image_name")?>">
+              <img class="img-responsive" src="<?=site_url("uploads/img/event/$event->image_name")?>" alt="">
+            </a>
           </div>
         </div>
         <div class="row">

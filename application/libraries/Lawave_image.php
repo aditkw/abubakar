@@ -32,6 +32,7 @@ class Lawave_image
 		*/
 
 		$this->image_path = realpath(APPPATH . $this->path.$img_path);
+		// die($this->image_path);
 		$files 						= $_FILES[$field_name];
 		$rand 						= rand(11, 10000);
 

@@ -20,14 +20,19 @@
           <?php foreach ($news as $news): ?>
             <div class="col-lg-4">
                 <div class="box-news animation-element">
-                  <img class="img-responsive" src="<?=site_url("uploads/img/news/$news->image_name")?>" alt="">
-                  <p><?=$news->news_title?></p>
+                  <img class="img-responsive" src="<?=site_url("uploads/img/news/tam_$news->image_name")?>" alt="">
+                  <p><?=limitKalimat($news->news_title, 38)?></p>
                   <p><i class="fa fa-calendar"></i> <?=convertDate($news->news_date)?></p>
                   <p><?=limitKalimat($news->news_desc, 100)?></p>
                   <p><a href="<?=site_url("news/$news->news_link")?>">Read More <i class="fa fa-arrow-right"></i></a></p>
                 </div>
               </div>
           <?php endforeach; ?>
+        </div>
+        <div class="row">
+          <div class="paginate">
+            <?=$pagination?>
+          </div>
         </div>
       </div>
     </div>

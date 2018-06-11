@@ -102,7 +102,7 @@ function topFunction() {
 
 $(document).ready(function(){
 
-	$('[data-fancybox="images"]').fancybox({
+	$('[data-fancybox="event"]').fancybox({
   afterLoad : function(instance, current) {
     var pixelRatio = window.devicePixelRatio || 1;
 
@@ -113,7 +113,7 @@ $(document).ready(function(){
   }
 });
 
-$('[data-fancybox="fancy-activity"]').fancybox({
+$('[data-fancybox="news"]').fancybox({
 afterLoad : function(instance, current) {
 	var pixelRatio = window.devicePixelRatio || 1;
 

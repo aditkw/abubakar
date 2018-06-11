@@ -125,6 +125,11 @@ class event extends Backend_Controller
 					->resize($this->wt,$this->ht)
 					->save_pa($this->thumb_pre,'');
 
+					$this->image_moo
+					->load($upload_image['image_path'].self::DS.$upload_image['image']['file_name'])
+					->resize(350,350,TRUE)
+					->save_pa('tam_','');
+
 					$array_data['news_date'] 		= $date;
 
 					$news_id = $this->news_model->insert($array_data);
@@ -173,6 +178,11 @@ class event extends Backend_Controller
 							->resize($this->wt,$this->ht)
 							->save_pa($this->thumb_pre,'');
 
+							$this->image_moo
+							->load($upload_image['image_path'].self::DS.$upload_image['image']['file_name'])
+							->resize(350,350,TRUE)
+							->save_pa('tam_','');
+
 						$array_img['image_name']				= $upload_image['image']['file_name'];
 
 						$this->image_model->update($array_img, array('image_id' => $get_image->image_id));
@@ -193,6 +203,7 @@ class event extends Backend_Controller
 					$where_image 	= array('parent_id' => $id, 'image_parent_name' => 'event');
 					$get_image 	= $this->image_model->get_by($where_image, 1, NULL, TRUE);
 					$this->lawave_image->delete_image($this->modul_file, $get_image->image_name, $this->thumb_pre);
+					$this->lawave_image->delete_image($this->modul_file, $get_image->image_name, 'tam_');
 					/* hapus data */
 					$this->news_model->delete($id);
 					$this->image_model->delete_by($where_image);
