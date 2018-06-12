@@ -1,0 +1,38 @@
+@media only screen and (min-width: 1370px) {
+    // ini untuk dilayar gede supaya ikut kecil elemen nya
+    $width: 1170px;
+    .grid-home{
+      width: $width;
+      margin-right: auto;
+      margin-left: auto;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 1024px) {
+    /* All Moblie.*/
+    section{
+      padding-top: 62px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Desktop & Tablet */
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* Tablet (Portrait) */
+
+}
+
+@media only screen and (min-width: 413px) and (max-width: 480px) {
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 412px) {
+
+}
+
+@media only screen and (min-width: 200px) and (max-width:  374px) {
+
+}

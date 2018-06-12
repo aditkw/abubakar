@@ -102,6 +102,18 @@ function topFunction() {
 
 $(document).ready(function(){
 
+  $(document).delegate('.open', 'click', function(event){
+      $(this).addClass('oppenned');
+      event.stopPropagation();
+  })
+  $(document).delegate('body', 'click', function(event) {
+      $('.open').removeClass('oppenned');
+  })
+  $(document).delegate('.cls', 'click', function(event){
+      $('.open').removeClass('oppenned');
+      event.stopPropagation();
+  });
+
 	$('[data-fancybox="event"]').fancybox({
   afterLoad : function(instance, current) {
     var pixelRatio = window.devicePixelRatio || 1;
@@ -158,7 +170,6 @@ afterLoad : function(instance, current) {
 	/* End Jquery Bxslider */
 
 	/* Jquery Owl-Carousel */
-	$(document).ready(function(){
 	  $("#home-slide").owlCarousel({
 	    loop:true,
       dots:true,
@@ -311,8 +322,6 @@ afterLoad : function(instance, current) {
 				}
 			}
 	  });
-
-	});
 
 	/* fancybox */
 	$('.fancybox').fancybox();
