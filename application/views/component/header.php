@@ -1,6 +1,6 @@
 <header>
   <div class="container-fluid header">
-    <div class="row visible-xs">
+    <div class="row visible-xs visible-sm">
       <div class="logo">
         <img src="<?=site_url('dist/img/assets/logo-mobile.jpg')?>" alt="">
       </div>
@@ -29,7 +29,7 @@
         <span class="cls"></span>
     </div>
     </div>
-    <div class="row visible-lg">
+    <div class="row visible-lg visible-md">
       <div class="logo-name col-lg-5">
         <div class="logo">
           <img src="<?=site_url("dist/img/assets/logo.jpg")?>" alt="">

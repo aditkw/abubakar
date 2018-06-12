@@ -10,12 +10,12 @@
     <div class="member-firm">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 left">
+          <div class="col-lg-3 col-xs-4 left">
             <p>Member Firm Of</p>
             <img src="<?=site_url('dist/img/assets/gmn-logo.png')?>" alt="">
             <p><em>an association of legally independent accounting firms worldwide.</em></p>
           </div>
-          <div class="col-lg-9 right">
+          <div class="col-lg-9 col-xs-8 right">
             <div class="text-firm">
               <p><?=$text->text_home?></p>
             </div>
@@ -30,8 +30,8 @@
           </div>
         <?php endforeach; ?>
         </div>
-        	<button class="am-next"><i class="fa fa-angle-left"></i></button>
-        	<button class="am-prev"><i class="fa fa-angle-right"></i></button>
+        	<button class="visible-lg visible-md am-next"><i class="fa fa-angle-left"></i></button>
+        	<button class="visible-lg visible-md am-prev"><i class="fa fa-angle-right"></i></button>
       </div>
     </div>
     <div class="home-service">

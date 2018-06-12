@@ -206,16 +206,16 @@ afterLoad : function(instance, current) {
       navText: [$('.am-next'),$('.am-prev')],
 	    responsive:{
 				320:{
-					items:1
+					items:2
 				},
 				480:{
-					items:1
+					items:3
 				},
 				600:{
-					items:1
+					items:3
 				},
 				768:{
-					items:1
+					items:4
 				},
 				1000:{
 					items:6
@@ -230,21 +230,21 @@ afterLoad : function(instance, current) {
 			responsiveClass:true,
 			autoplayHoverPause: true,
 	    responsive:{
-				320:{
-					items:2
-				},
-				480:{
-					items:2
-				},
-				600:{
-					items:3
-				},
-				768:{
-					items:4
-				},
-				1000:{
-					items:6
-				}
+        320:{
+          items:2
+        },
+        480:{
+          items:3
+        },
+        600:{
+          items:3
+        },
+        768:{
+          items:4
+        },
+        1000:{
+          items:6
+        }
 			}
 	  });
 
@@ -259,7 +259,7 @@ afterLoad : function(instance, current) {
 					items:1
 				},
 				480:{
-					items:1
+					items:2
 				},
 				600:{
 					items:2
