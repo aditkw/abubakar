@@ -2,7 +2,7 @@
   <div class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-xs-12">
           <div class="logo-footer">
             <img src="<?=site_url('dist/img/assets/footer-logo.jpg')?>" alt="">
             <p>Abubakar Usman & Rekan <br>
@@ -12,12 +12,12 @@
           <div class="keterangan">
             <p><?=$text->text_footer?></p>
           </div>
-          <div class="member-footer">
+          <div class="member-footer visible-lg visible-md">
             <p>Member Firm Of:</p>
             <img src="<?=site_url('dist/img/assets/gmn-logo-footer.png')?>" alt="">
           </div>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-6 visible-lg visible-md visible-sm">
           <p>Navigation</p>
           <p><a href="<?=site_url()?>"><i class="fa fa-circle-thin"></i> Home</a></p>
           <p><a href="<?=site_url('our-firm')?>"><i class="fa fa-circle-thin"></i> About Us</a></p>
@@ -27,13 +27,13 @@
           <p><a href="<?=site_url('contact-us')?>"><i class="fa fa-circle-thin"></i> Contact Us</a></p>
           <p><a href="<?=site_url('links')?>"><i class="fa fa-circle-thin"></i> Links</a></p>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-sm-6 col-xs-12">
           <p>Service</p>
           <?php foreach ($foot_services as $service): ?>
             <p><a href="<?=site_url('our-service/'.$service->services_link)?>"><i class="fa fa-circle-thin"></i> <?=$service->services_name?></a></p>
           <?php endforeach; ?>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-12 col-xs-12">
           <p>Contact Info</p>
           <div class="address">
             <p>Lead Office</p>
@@ -46,9 +46,9 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © 2018 Abubakar Usman & Rekan - Designed & Powered by LawaveDesign.com</p>
-          <div class="sosmed">
+        <div class="col-lg-12 col-xs-12">
+          <p>Copyright © 2018 Abubakar Usman & Rekan</p>
+          <div class="sosmed visible-lg visible-md visible-sm">
             <a href="<?=$contact->contact_fb?>"><img src="<?=site_url('dist/img/assets/fb.png')?>" alt=""></a>
             <a href="<?=$contact->contact_tw?>"><img src="<?=site_url('dist/img/assets/tw.png')?>" alt=""></a>
             <a href="<?=$contact->contact_yt?>"><img src="<?=site_url('dist/img/assets/yt.png')?>" alt=""></a>

@@ -328,8 +328,8 @@ header {
       border: 1px solid #0a806e; }
 .homepage .member-firm {
   background: #108775;
-  padding-top: 80px;
-  padding-bottom: 100px;
+  padding-top: 6vw;
+  padding-bottom: 8vw;
   position: relative; }
   .homepage .member-firm p {
     color: #fff; }
@@ -337,7 +337,8 @@ header {
     border-right: 1px solid #1a9381;
     text-align: right; }
     .homepage .member-firm .left img {
-      width: 123px;
+      max-width: 123px;
+      width: 100%;
       margin-bottom: 10px; }
     .homepage .member-firm .left p:first-child {
       font-weight: bold;
@@ -380,7 +381,7 @@ header {
       right: -35px; }
 .homepage .home-service {
   padding-top: 80px;
-  padding-bottom: 60px; }
+  padding-bottom: 5vw; }
   .homepage .home-service p {
     text-align: center; }
   .homepage .home-service .row:first-child p:first-child {
@@ -882,12 +883,12 @@ footer .footer {
     color: #fff;
     margin: 0; }
   footer .footer .row:first-child {
-    margin-bottom: 50px; }
+    margin-bottom: 4vw; }
     footer .footer .row:first-child > div:nth-child(n + 2) {
-      margin-top: 80px; }
+      margin-top: 6vw; }
       footer .footer .row:first-child > div:nth-child(n + 2) > p:first-child {
         font-weight: bold;
-        margin-bottom: 45px; }
+        margin-bottom: 4vw; }
       footer .footer .row:first-child > div:nth-child(n + 2) > p:nth-child(n + 2) {
         margin-bottom: 5px; }
         footer .footer .row:first-child > div:nth-child(n + 2) > p:nth-child(n + 2) i {
@@ -936,11 +937,42 @@ footer .footer {
 @media only screen and (min-width: 200px) and (max-width: 1024px) {
   /* All Moblie.*/
   section {
-    padding-top: 62px; } }
+    padding-top: 62px; }
+
+  p {
+    margin-bottom: 1vw; }
+
+  .homepage .home-service .row:last-child .col-lg-4 {
+    border-right: 1px solid #fff; }
+    .homepage .home-service .row:last-child .col-lg-4:nth-child(n + 4) {
+      border-bottom: 1px solid #e0e0e0; }
+  .homepage .member-firm p {
+    font-size: 1.5vw; }
+  .homepage .member-firm .left p:first-child {
+    font-size: 2vw; }
+  .homepage .member-firm .container.partners {
+    padding-top: 0;
+    padding-bottom: 0; }
+  .homepage .benefits-home .box-benefits {
+    padding: 2vw; }
+    .homepage .benefits-home .box-benefits a {
+      margin-top: 4vw;
+      font-size: 2vw; }
+  .homepage .benefits-home .box-benefits p:first-child {
+    font-size: 3vw;
+    width: 100%; }
+  .homepage .benefits-home .box-benefits p:nth-child(2) {
+    font-size: 1.5vw;
+    width: 100%; }
+  .homepage .benefits-home .box-benefits p:nth-child(3) {
+    font-size: 1.5vw; } }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* Desktop & Tablet */ }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   /* Tablet (Portrait) */ }
+@media only screen and (min-width: 200px) and (max-width: 374px) {
+  footer .footer .row:first-child .col-lg-4:first-child .logo-footer p {
+    font-size: 16px; } }
 .banner-head {
   position: relative; }
   .banner-head div.breadcumb {

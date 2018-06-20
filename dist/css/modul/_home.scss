@@ -7,8 +7,8 @@
   }
   .member-firm{
     background: #108775;
-    padding-top: 80px;
-    padding-bottom: 100px;
+    padding-top: 6vw;
+    padding-bottom: 8vw;
     position: relative;
     p{
       color: #fff;
@@ -17,7 +17,8 @@
       border-right: 1px solid #1a9381;
       text-align: right;
       img{
-        width: 123px;
+        max-width: 123px;
+        width: 100%;
         margin-bottom: 10px
       }
       p{
@@ -81,7 +82,7 @@
 
   .home-service{
     padding-top: 80px;
-    padding-bottom: 60px;
+    padding-bottom: 5vw;
     p{
       text-align: center;
     }

@@ -335,7 +335,7 @@ afterLoad : function(instance, current) {
 			'title'			: this.title,
 			'href'			: this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
 			'type'			: 'swf',
-			'swf'			: {
+			'swf'			  : {
 				 'wmode'		: 'transparent',
 				'allowfullscreen'	: 'true'
 			}
