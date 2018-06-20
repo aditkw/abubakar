@@ -5,7 +5,6 @@
       <div class="breadcumb">
         <ul class="breadcrumb container">
           <li><a href="<?=site_url()?>">Home</a></li>
-          <li><a href="#">About Us</a></li>
           <li class="aktip"><a href="#">Our Partners</a></li>
         </ul>
       </div>
@@ -19,10 +18,10 @@
         </div>
         <?php foreach ($partners as $partner): ?>
           <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
               <img src="<?=site_url("uploads/img/partners/$partner->image_name")?>">
             </div>
-            <div class="col-lg-9">
+            <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
               <p><?=nl2br($partner->info_desc)?></p>
             </div>
           </div>

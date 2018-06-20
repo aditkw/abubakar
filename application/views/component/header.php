@@ -2,28 +2,48 @@
   <div class="container-fluid header">
     <div class="row visible-xs visible-sm">
       <div class="logo">
-        <img src="<?=site_url('dist/img/assets/logo-mobile.jpg')?>" alt="">
+        <a href="<?=site_url()?>">
+          <img src="<?=site_url('dist/img/assets/logo-mobile.jpg')?>" alt="">
+        </a>
       </div>
       <div class="contact">
-        <p>(021) 546-7130</p>
-        <p>info@your-website.com</p>
+        <p><?=$contact->contact_phone?></p>
+        <p><?=$contact->contact_email?></p>
       </div>
       <div  class="open">
         <span class="cls"></span>
           <span>
               <ul class="sub-menu ">
-                  <li>
-                      <a href="#about" title="about">Sobre / About</a>
-                  </li>
-                  <li>
-                      <a href="#skills" title="skills">Habilidades / Skills</a>
-                  </li>
-                  <li>
-                      <a href="#jobs" title="jobs">Trabalhos / Jobs</a>
-                  </li>
-                  <li>
-                      <a href="#contact" title="contact">Contato / Contact</a>
-                  </li>
+                <li>
+                    <a href="<?=site_url('our-firm')?>" title="our firm">Our Firm</a>
+                </li>
+                <li>
+                    <a href="<?=site_url('our-service')?>" title="our services">Our Services</a>
+                </li>
+                <li>
+                  <a href="<?=site_url('our-partners')?>" title="our partners">Our Partners</a>
+                </li>
+                <li>
+                  <a href="<?=site_url('our-clients')?>" title="our clients">Our Clients</a>
+                </li>
+                <li>
+                  <a href="<?=site_url('benefits-for-our-client')?>" title="benefits our clients">Benefits For Our Clients</a>
+                </li>
+                <li>
+                  <a href="<?=site_url('international-association')?>" title="international association">International Association</a>
+                </li>
+                <li>
+                  <a href="<?=site_url('news')?>" title="news">News</a>
+                </li>
+                <li>
+                    <a href="<?=site_url('event')?>" title="event">Event</a>
+                </li>
+                <li>
+                    <a href="<?=site_url('careers')?>" title="careers">Careers</a>
+                </li>
+                <li>
+                    <a href="<?=site_url('contact')?>" title="contact">Contact</a>
+                </li>
               </ul>
           </span>
         <span class="cls"></span>
@@ -68,8 +88,8 @@
           <i class="fa fa-search"></i>
         </div>
         <div class="contact">
-          <p>(021) 546-7130</p>
-          <p>info@your-website.com</p>
+          <p><?=$contact->contact_phone?></p>
+          <p><?=$contact->contact_email?></p>
         </div>
       </div>
     </div>

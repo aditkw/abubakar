@@ -17,7 +17,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
             <ul class="nav nav-tabs">
               <?php $i=0; foreach ($careers as $career):
                 ($i == 0) ? $aktip='active' : $aktip = '';
@@ -26,7 +26,7 @@
               <?php $i++; endforeach; ?>
             </ul>
           </div>
-          <div class="col-lg-9">
+          <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
             <div class="tab-content">
               <?php $i=0; foreach ($careers as $career):
                 ($i == 0) ? $aktip='active' : $aktip = '';

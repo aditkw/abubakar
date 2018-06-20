@@ -5,7 +5,6 @@
       <div class="breadcumb">
         <ul class="breadcrumb container">
           <li><a href="<?=site_url()?>">Home</a></li>
-          <li><a href="#">About Us</a></li>
           <li class="aktip"><a href="#">Our Firm</a></li>
         </ul>
       </div>
