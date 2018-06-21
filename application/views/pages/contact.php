@@ -17,11 +17,11 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-1">
+          <div class="col-lg-1 visible-lg visible-md">
             <img src="<?=site_url('dist/img/assets/text-contact.png')?>" alt="">
           </div>
-          <div class="col-lg-11">
-            <div class="col-lg-8">
+          <div class="col-lg-11 col-xs-12">
+            <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12">
               <form class="form-horizontal form-contact" action="<?=site_url('contact')?>" method="post">
                 <?php if (!empty($error)) {?>
       								<div class="alert alert-danger">
@@ -63,12 +63,12 @@
                   </div>
                 </div>
 
-                <div class="col-lg-2 col-lg-offset-2">
+                <div class="col-lg-2 col-xs-12 col-lg-offset-2">
                   <input class="btn btn-info" type="submit" name="send" value="Submit">
                 </div>
               </form>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
               <p>Operation Office</p>
               <p>Wisma Dharmala Sakti Annexe Lantai 7,<br>
                 Jl. Jend. Sudirman Kav. 32, Karet Tengsin,<br>

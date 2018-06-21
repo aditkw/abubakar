@@ -39,7 +39,7 @@
             line-height: 31px;
           }
           .tanggal{
-            margin-left: 20px;            
+            margin-left: 20px;
           }
           .share{
             margin-left: 20px;
@@ -92,7 +92,7 @@
           &.video{
             .box-video{
               background-color: #0B806E;
-              width: 70%;
+              width: 100%;
               margin: 20px auto;
               padding: 20px 0;
               p{
@@ -111,8 +111,8 @@
               iframe{
                 display: block;
                 margin: 0 auto;
-                width: 60%;
-                height: 350px;
+                width: 90%;
+                height: 40vw;
               }
             }
           }

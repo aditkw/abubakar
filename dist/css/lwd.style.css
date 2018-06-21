@@ -695,7 +695,9 @@ header {
   padding: 0 5px;
   background: #f9f9f9; }
   .news .box-news > img {
-    max-width: 100%; }
+    max-width: 100%;
+    display: block;
+    margin: 0 auto; }
   .news .box-news p:nth-child(2) {
     margin-top: 8px;
     font-family: "Opensans";
@@ -776,7 +778,7 @@ header {
       font-size: 15px; }
   .news .content-detail .container .row:nth-child(5).video .box-video {
     background-color: #0B806E;
-    width: 70%;
+    width: 100%;
     margin: 20px auto;
     padding: 20px 0; }
     .news .content-detail .container .row:nth-child(5).video .box-video p {
@@ -794,8 +796,8 @@ header {
     .news .content-detail .container .row:nth-child(5).video .box-video iframe {
       display: block;
       margin: 0 auto;
-      width: 60%;
-      height: 350px; }
+      width: 90%;
+      height: 40vw; }
   .news .content-detail .container .row:last-child > div:first-child {
     border-bottom: 1px solid #ededed; }
     .news .content-detail .container .row:last-child > div:first-child p {
@@ -975,9 +977,20 @@ footer .footer {
     font-size: 1.5vw;
     width: 100%; }
   .homepage .benefits-home .box-benefits p:nth-child(3) {
-    font-size: 1.5vw; } }
+    font-size: 1.5vw; }
+
+  .content-contact .row:nth-child(2) {
+    margin-top: 0; }
+    .content-contact .row:nth-child(2) div .col-xs-12 {
+      padding: 0; }
+      .content-contact .row:nth-child(2) div .col-xs-12:nth-child(1) {
+        margin-bottom: 5vw; }
+    .content-contact .row:nth-child(2) .col-lg-11::before {
+      left: 15px; } }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* Desktop & Tablet */ }
+  /* Desktop & Tablet */
+  .content-contact .row:nth-child(2) div .col-sm-5 {
+    padding: 0 15px; } }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   /* Tablet (Portrait) */
   .nav-tabs {

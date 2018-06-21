@@ -61,11 +61,29 @@
         }
       }
     }
+
+    .content-contact .row:nth-child(2) {
+      margin-top: 0;
+      div .col-xs-12{
+        padding: 0;
+        &:nth-child(1){
+          margin-bottom: 5vw;
+        }
+      }
+
+      .col-lg-11::before {
+        left: 15px;
+      }
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     /* Desktop & Tablet */
-
+    .content-contact .row:nth-child(2) {
+      div .col-sm-5{
+        padding: 0 15px;
+      }
+    }
 }
 
 
@@ -74,6 +92,7 @@
   .nav-tabs{
     margin-bottom: 5vw;
   }
+
 }
 
 @media only screen and (min-width: 413px) and (max-width: 480px) {
