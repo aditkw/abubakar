@@ -13,6 +13,10 @@
       <div  class="open">
         <span class="cls"></span>
           <span>
+            <form class="search-mobile" action="<?=site_url('search')?>" method="get">
+              <input placeholder="Search here" type="text" name="s">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
               <ul class="sub-menu ">
                 <li>
                     <a href="<?=site_url('our-firm')?>" title="our firm">Our Firm</a>
@@ -95,3 +99,6 @@
     </div>
   </div>
 </header>
+<div id="myScroll" class="scroll-top">
+  <button onclick="topFunction()" type="button" name="button"> <i class="fa fa-angle-up"></i> </button>
+</div>

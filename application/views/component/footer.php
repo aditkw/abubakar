@@ -43,6 +43,12 @@
             <p><?=$contact->contact_phone?></p>
             <p><?=$contact->contact_email?></p>
           </div>
+          <div style="margin-top: 5vw;" class="sosmed visible-xs">
+            <a href="<?=$contact->contact_fb?>"><img src="<?=site_url('dist/img/assets/fb.png')?>" alt=""></a>
+            <a href="<?=$contact->contact_tw?>"><img src="<?=site_url('dist/img/assets/tw.png')?>" alt=""></a>
+            <a href="<?=$contact->contact_yt?>"><img src="<?=site_url('dist/img/assets/yt.png')?>" alt=""></a>
+            <a href="<?=$contact->contact_in?>"><img src="<?=site_url('dist/img/assets/in.png')?>" alt=""></a>
+          </div>
         </div>
       </div>
       <div class="row">
