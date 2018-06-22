@@ -11,37 +11,37 @@
     <?php foreach($menu as $url) { ?>
     <url>
         <loc><?= base_url().$url->seo_page ?></loc>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
     <?php } ?>
     <!-- End -->
 
-    <!-- Sitemap Product Category -->
-    <?php foreach ($category as $url): ?>
+    <!-- Sitemap Services -->
+    <?php foreach ($services as $url): ?>
       <url>
-          <loc><?= base_url('product/category/'.$url->category_link) ?></loc>
+          <loc><?= base_url('our-service/'.$url->services_link) ?></loc>
           <priority>0.6</priority>
           <changefreq>monthly</changefreq>
       </url>
     <?php endforeach; ?>
     <!-- End -->
 
-    <!-- Sitemap Product Detail -->
-    <?php foreach ($product as $url): ?>
+    <!-- Sitemap News Detail -->
+    <?php foreach ($news as $url): ?>
       <url>
-        <loc><?= base_url('product/detail/'.$url->product_link) ?></loc>
-          <priority>0.8</priority>
+        <loc><?= base_url('news/'.$url->news_link) ?></loc>
+          <priority>0.5</priority>
           <changefreq>monthly</changefreq>
       </url>
     <?php endforeach; ?>
     <!-- End -->
 
-    <!-- Sitemap Activity -->
-    <?php foreach ($activity as $url): ?>
+    <!-- Sitemap Event Detail -->
+    <?php foreach ($event as $url): ?>
       <url>
-        <loc><?= base_url('activity/detail/'.$url->activity_link) ?></loc>
-          <priority>0.7</priority>
+        <loc><?= base_url('event/'.$url->news_link) ?></loc>
+          <priority>0.5</priority>
           <changefreq>monthly</changefreq>
       </url>
     <?php endforeach; ?>
