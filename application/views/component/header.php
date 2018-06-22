@@ -56,7 +56,9 @@
     <div class="row visible-lg visible-md">
       <div class="logo-name col-lg-5">
         <div class="logo">
-          <img src="<?=site_url("dist/img/assets/logo.jpg")?>" alt="">
+          <a href="<?=site_url()?>">
+            <img src="<?=site_url("dist/img/assets/logo.jpg")?>" alt="">
+          </a>
         </div>
         <div class="name">
           <p>Abubakar Usman & Rekan</p>
